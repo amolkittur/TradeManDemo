@@ -20,8 +20,9 @@ while true; do
     source /Users/traderscafe/miniconda3/etc/profile.d/conda.sh && \
 	conda activate tradingenv && \
     cd /Users/traderscafe/Desktop/Main/ && \
-	/Users/traderscafe/miniconda3/envs/tradingenv/bin/python MarketUtils/Main/dailylogin.py && \
-	echo "Program started successfully" && break
+	/Users/traderscafe/miniconda3/envs/tradingenv/bin/python MarketUtils/Main/dailylogin.py > output.txt && \
+	cat output.txt && \
+	echo "Program started successfully" && rm output.txt && break
 
     # If the command failed and we've reached the maximum number of attempts, send a message and exit
     if ((attempt==max_attempts)); then
