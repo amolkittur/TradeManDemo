@@ -48,9 +48,9 @@ def get_option_tokens(base_symbol, expiry_date, option_type, strike_prc):
     instruments_df = instruments_df[
         ["instrument_token", "tradingsymbol", "name", "exchange", "lot_size", "instrument_type", "expiry", "strike"]
     ]
-    
+    exchange = ''
     if base_symbol == 'SENSEX':
-        exchange == 'BFO'
+        exchange = 'BFO'
     else:
         exchange = 'NFO'
     
