@@ -1,0 +1,32 @@
+[
+    {
+        "account_name": "vimala",
+        "broker": "aliceblue",
+        "username": "BY1424",
+        "password": "K@nnada333",
+        "twoFA": "1963",
+        "api_secret": "a9bkSpfZn6x24iWvh1L8epG464l2OqZJIpc4gzWOOmKSacMCtmZtTn8W328rqd1KVzDBPP3M50Frhy0cCnCk272E1z1CrosIAlTD",
+        "app_code": "mqTi31aA56ylUKh",
+        "api_key": "yn6YMylMSOa7Qmp9OPYhtFWSE4OL7hTMTIptvx1Odl1DkVOxqCFuboLnTCJiEd2IoEQolWY7G1JlABIkPxsvDL81hcAcOa08zszFj7DFgqPkNKGJAll3tP3OZjvmIYH6",
+        "totp_access": "DTGZGSGONNQWEGFXSTGKKZMHJUVFFYPX",
+        "session_id": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICIyam9lOFVScGxZU3FTcDB3RDNVemVBQkgxYkpmOE4wSDRDMGVVSWhXUVAwIn0.eyJleHAiOjE3MDc0NjAzNzksImlhdCI6MTcwMjI3NjM3OSwianRpIjoiOGFlMDM4MmItYWIwOS00ZTllLTkwYjctNzI4NmUyY2EzZjg2IiwiaXNzIjoiaHR0cHM6Ly9hYjEuYW1vZ2EudGVjaC9hbXNzby9yZWFsbXMvQWxpY2VCbHVlIiwiYXVkIjoiYWNjb3VudCIsInN1YiI6ImMxOTAxOTk5LTIxNTQtNDU4MS04NzRjLTY5M2YyZTFkNWUyNCIsInR5cCI6IkJlYXJlciIsImF6cCI6ImFsaWNlLWtiIiwic2Vzc2lvbl9zdGF0ZSI6ImJhZDM1ZjI5LTk4ZjgtNDBmZi04N2M5LTA1MTMzYTY2Y2Y1ZiIsImFjciI6IjEiLCJhbGxvd2VkLW9yaWdpbnMiOlsiaHR0cDovL2xvY2FsaG9zdDozMDAyIiwiaHR0cDovL2xvY2FsaG9zdDo1MDUwIiwiaHR0cDovL2xvY2FsaG9zdDo5OTQzIiwiaHR0cDovL2xvY2FsaG9zdDo5MDAwIl0sInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsImRlZmF1bHQtcm9sZXMtYWxpY2VibHVla2IiLCJ1bWFfYXV0aG9yaXphdGlvbiJdfSwicmVzb3VyY2VfYWNjZXNzIjp7ImFsaWNlLWtiIjp7InJvbGVzIjpbIkdVRVNUX1VTRVIiLCJBQ1RJVkVfVVNFUiJdfSwiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJlbWFpbCBwcm9maWxlIiwic2lkIjoiYmFkMzVmMjktOThmOC00MGZmLTg3YzktMDUxMzNhNjZjZjVmIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsInVjYyI6IkJZMTQyNCIsImNsaWVudFJvbGUiOlsiR1VFU1RfVVNFUiIsIkFDVElWRV9VU0VSIl0sIm5hbWUiOiJWSU1BTEEgSEVHREUiLCJtb2JpbGUiOiI5NDQ4OTU1MzcwIiwicHJlZmVycmVkX3VzZXJuYW1lIjoiYnkxNDI0IiwiZ2l2ZW5fbmFtZSI6IlZJTUFMQSIsImZhbWlseV9uYW1lIjoiSEVHREUiLCJlbWFpbCI6Im5pZ2h0c2t5a2tAZ21haWwuY29tIn0.JDvT8lgSOa54LrlKWtjH2PFCpUgQzmjHGSAnXbgq8By0o_I3u1V2bV-zEmdKtE3MciohCJKO4tkif_lmjrhXpn4iu8vOa5xqzg6zNQ7uZHeb02w2n-HljWk017vclDTK837GWBaaXP64A3hEieKYj8V9gzb5Rh5MjOxfmj7uw8H7cjlFU-5IkObUW-jjGsb1nlTqMYZLXfltaxFFb2aHzO-Zvt1s5P1T0RWTQEP5-m4_VYkMWstb_DVlSLe5-GFkqR6qucrvzqZ7zkoShkfUbe5cXpTuWyOeiyAsW1KHZ06NPZxdwYAqxO6JDVsI22ukTTezgxVnPSZucD1HZ6MdzQ",
+        "mobile_number": "+918618221715",
+        "account_type": [
+            "Active",
+            "TestOrder1"
+        ],
+        "qty": {
+            "AmiPy": 550,
+            "MPWizard": {
+                "NIFTY": 1400,
+                "BANKNIFTY": 510,
+                "FINNIFTY": 1440
+            },
+            "ExpiryTrader": 0,
+            "OvernightFutures": 650
+        },
+        "current_capital": 2595575.07,
+        "yesterday_PnL": -237.22,
+        "expected_morning_balance": 2595575.07
+    }
+]

@@ -1,0 +1,52 @@
+{
+    "orders": {
+        "MPWizard": {
+            "BUY": [
+                {
+                    "order_id": null,
+                    "qty": 1400,
+                    "timestamp": "2023-12-11 12:46:23.860706",
+                    "exchange_token": 40848,
+                    "trade_id": "MP8_entry"
+                },
+                {
+                    "order_id": "23121100185916",
+                    "qty": 1400,
+                    "timestamp": "2023-12-11 12:51:53.831347",
+                    "exchange_token": 40834,
+                    "trade_id": "MP9_entry"
+                },
+                {
+                    "order_id": null,
+                    "qty": 1400,
+                    "timestamp": "2023-12-11 12:52:24.931284",
+                    "exchange_token": 40834,
+                    "trade_id": "MP10_entry"
+                }
+            ],
+            "SELL": [
+                {
+                    "order_id": null,
+                    "qty": 1400,
+                    "timestamp": "2023-12-11 12:46:24.574454",
+                    "exchange_token": 40848,
+                    "trade_id": "MP8_exit"
+                },
+                {
+                    "order_id": "23121100185923",
+                    "qty": 1400,
+                    "timestamp": "2023-12-11 12:51:54.277030",
+                    "exchange_token": 40834,
+                    "trade_id": "MP9_exit"
+                },
+                {
+                    "order_id": null,
+                    "qty": 1400,
+                    "timestamp": "2023-12-11 12:52:25.688003",
+                    "exchange_token": 40834,
+                    "trade_id": "MP10_exit"
+                }
+            ]
+        }
+    }
+}

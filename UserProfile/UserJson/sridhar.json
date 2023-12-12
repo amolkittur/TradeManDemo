@@ -1,0 +1,14 @@
+{
+    "account_name" : "sridhar",
+    "broker": "aliceblue",
+        "username": "935347",
+        "password": "K@nnada333",
+        "twoFA": "1990",
+        "api_secret": "zmOAKJMzMpTKtuNNvPeRKHIWVKFFidIjyMcWxQgAgQVofznoPQzfZtzakSYIiWZmhyhtONSfTsUfmHAcRxVayQUymMLkrqfvGRdd",
+        "app_code": "HaRYaumJCQuFiEy",
+        "api_key": "pjILfdi8AR80eKFImLVa7g6snJg1tRhsiIqj4BigYLNe4sdYBgsElQi2tj58Q9h84SlGtD1Vd1HVeD5V3FP0VQnlAbp0jfSrdcUsoLIDP8gTNLDuCucOOioysV50Dhxc",
+        "totp_access": "IPPRNKIUJHSRLEADIQKUPEXNPKIKOBEP",
+        "percentage_risk": {
+        "MPWizard": 0.05
+        }
+    }

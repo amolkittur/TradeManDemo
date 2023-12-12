@@ -1,0 +1,54 @@
+{
+    "today_orders": {
+        "MPWizard": {
+            "BUY": [
+                {
+                    "trade_id": "MP179",
+                    "avg_price": 45.20,
+                    "qty": 15,
+                    "time": "15/11/2023 10:57:01",
+                    "strike_price": 44200,
+                    "option_type": "CE",
+                    "trading_symbol": "BANKNIFTY15NOV23C44200",
+                    "trade_type": "BUY",
+                    "order_type": "entry"
+                },
+                {
+                    "trade_id": "MP180",
+                    "avg_price": 38.40,
+                    "qty": 50,
+                    "time": "15/11/2023 13:13:59",
+                    "strike_price": 19650,
+                    "option_type": "CE",
+                    "trading_symbol": "NIFTY16NOV23C19650",
+                    "trade_type": "BUY",
+                    "order_type": "entry"
+                }
+            ],
+            "SELL": [
+                {
+                    "trade_id": "MP179",
+                    "avg_price": 2.0,
+                    "qty": 15,
+                    "time": "15/11/2023 15:11:03",
+                    "strike_price": 44200,
+                    "option_type": "PE",
+                    "trading_symbol": "BANKNIFTY15NOV23C44200",
+                    "trade_type": "SELL",
+                    "order_type": "exit"
+                },
+                {
+                    "trade_id": "MP180",
+                    "avg_price": 30.65,
+                    "qty": 50,
+                    "time": "15/11/2023 15:13:00",
+                    "strike_price": 19650,
+                    "option_type": "PE",
+                    "trading_symbol": "NIFTY16NOV23P19250",
+                    "trade_type": "SELL",
+                    "order_type": "exit"
+                }
+            ]
+        }
+    }
+}

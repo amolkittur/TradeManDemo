@@ -1,0 +1,54 @@
+{
+    "StrategyName": "OvernightFutures",
+    "Description": "Orders are placed based on the predicition of the Screenipy algo",
+    "Instruments": [
+        "NIFTY"
+    ],
+    "NextTradeId": "OF93",
+    "GeneralParams": {
+        "TimeFrame": "Daily",
+        "ExpiryType": [
+            "Monthly",
+            "Weekly"
+        ],
+        "ProductType": "NRML",
+        "OrderType": "Market",
+        "Segment": "NFO",
+        "TradeView": "Bearish",
+        "HedgeTransactionType": "SELL"
+    },
+    "EntryParams": {
+        "Token": "256265",
+        "EntryTime": "15:15:00",
+        "SLMultipler": 3
+    },
+    "ExitParams": {
+        "SLType": "TimeBased",
+        "SqroffTime": "09:18:00"
+    },
+    "TodayOrders": [
+        "OO44",
+        "OF4",
+        "OF5",
+        "OF6",
+        "OF8",
+        "OF74",
+        "OF76",
+        "OF77",
+        "OF81",
+        "OF82",
+        "OF85",
+        "OF86",
+        "OF87",
+        "OF88",
+        "OF89",
+        "OF92",
+        "OF94"
+    ],
+    "ExtraInformation": {
+        "hedge_exchange_token": 40818,
+        "futures_exchange_token": 63197,
+        "prediction": "Bullish"
+    },
+    "SignalEntry": {}
+}

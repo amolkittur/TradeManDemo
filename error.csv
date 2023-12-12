@@ -1,0 +1,8 @@
+"Sl.no 	Date	Error	Status	Category	Comments",,
+1,15/09/23,In overnight exit order_details['base_symbol'] returned none type
+2,20/09/23,In MPWizard session_ID was not generated from the broker side
+3,21/09/23,In Siri strategy BNF expiry date(BNF monthly expiry falls on Thursday) 
+5,25/09/23,ShortCoverSignal not generated for AmiPy
+4,26/09/23,RED:Block Type:NonSqroff Reason:Exchange issue.....!!!![ ALICEBLUE NFO ],Broker side issue
+6,25/11/23, Overnight futures exit after the holidays
+7,12/12/23, AmiPy did not exit the position at square off time

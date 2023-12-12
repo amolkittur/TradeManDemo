@@ -1,0 +1,17 @@
+{
+    "StrategyName": "Stocks",
+    "Description": "orders placed via telegram",
+    "Instruments": [
+        "NSE"
+    ],
+    "NextTradeId": null,
+    "GeneralParams": {},
+    "EntryParams": {},
+    "ExitParams": {},
+    "TodayOrders": [
+        "STOCK1",
+        "STOCK12"
+    ],
+    "ExtraInformation": {},
+    "SignalEntry": {}
+}

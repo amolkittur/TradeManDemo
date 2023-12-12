@@ -1,0 +1,32 @@
+{
+    "StrategyName": "Coin",
+    "Description": "Flips a coin and enters the trade at random time",
+    "Instruments": [
+        "NIFTY",
+        "BANKNIFTY",
+        "FINNIFTY",
+        "MIDCPNIFTY",
+        "SENSEX"
+    ],
+    "NextTradeId": "CO1",
+    "GeneralParams": {
+        "TimeFrame": "SingleEntry",
+        "ExpiryType": "Weekly",
+        "ProductType": "MIS",
+        "OrderType": "Market",
+        "TradeView": "Random",
+        "StrategyType": "OB"
+    },
+    "EntryParams": {
+        "EntryTime": "Random",
+        "InstrumentToday": "MIDCPNIFTY"
+    },
+    "ExitParams": {
+        "SLType": "NoSL"
+    },
+    "TodayOrders": [
+    ],
+    "ExtraInformation": {
+    },
+    "SignalEntry": {}
+}

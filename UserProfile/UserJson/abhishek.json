@@ -1,0 +1,16 @@
+{
+    "account_name" : "abhishek",
+    "broker": "aliceblue",
+    "username": "1106099",
+    "password": "K@nnada333",
+    "twoFA": "1994",
+    "api_secret": "dNnSPTjvbJNrWcvYxJMOLaBriWsDHcjWkDLlkCOQshcxaiWJIYiXJNdFqcRDdRxPcrXkeOYRZyXJVkpBCvSpVvjmQcBMkuSgJEoO",
+    "app_code": "YZnJlJpEsKQyRnL",
+    "api_key": "DkT2F8Id9EDLCHnvb0YZtC3yCyyEU6Uy5DQ495BEUAhmPjZRtWLc9y9FSegzA9Rn8VkVZKzujA74f27li9HnVWmo8POeSszvfVW2He4aGSJYQmYxreOnO9uHD4UpaWeM",
+    "totp_access": "CINFCGSKJUMSOJSBWAXUZXVIPTASBATG",
+    "percentage_risk": {
+        "MPWizard": 0.025,
+        "OvernightFutures": 80000,
+        "ExpiryTrader": 0.01
+    }
+}

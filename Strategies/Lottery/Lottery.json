@@ -1,0 +1,36 @@
+{
+    "StrategyName": "Lottery",
+    "Description": "Buys weekly OTM options of respective Instruments on its expiry day",
+    "Instruments": [
+        "NIFTY",
+        "BANKNIFTY",
+        "FINNIFTY",
+        "MIDCAP",
+        "SENSEX"
+    ],
+    "NextTradeId": "LT25",
+    "GeneralParams" : {
+        "TimeFrame": "SingleEntry",
+        "ExpiryType": "Weekly",
+        "OrderType": "MIS",
+        "Segment": "NFO",
+        "TradeView": "Bearish"
+    },
+    "EntryParams": {
+        "EntryTime": "09:20:00",
+        "InstrumentToday": "MIDCPNIFTY",
+        "StrikeMultiplier": 3,
+        "HedgeMultiplier": 7,
+        "SLMultipler": 2
+    },
+    "ExitParams": {
+        "SLType": "FixedSL",
+        "SqroffTime": "15:05:00"
+    },
+    "TodayOrders": [
+        "LT24"
+    ],
+    "ExtarInformation": {},
+    "SignalEntry": {}
+
+}

@@ -1,0 +1,77 @@
+{
+    "StrategyName": "ExpiryTrader",
+    "Description": "Sells weekly OTM options of respective Instruments on its expiry day",
+    "Instruments": [
+        "NIFTY",
+        "BANKNIFTY",
+        "FINNIFTY",
+        "MIDCPNIFTY",
+        "SENSEX"
+    ],
+    "NextTradeId": "ET94",
+    "GeneralParams": {
+        "TimeFrame": "SingleEntry",
+        "ExpiryType": "Weekly",
+        "ProductType": "MIS",
+        "OrderType": "Market",
+        "TradeView": "Bearish",
+        "StrategyType": "OS",
+        "HedgeTransactionType": "BUY",
+        "MainTransactionType": "SELL"
+    },
+    "EntryParams": {
+        "EntryTime": "09:20:00",
+        "InstrumentToday": "MIDCPNIFTY",
+        "StrikeMultiplier": 2,
+        "HedgeMultiplier": 7,
+        "SLMultipler": 2
+    },
+    "ExitParams": {
+        "SLType": "FixedSL",
+        "SqroffTime": "15:05:00"
+    },
+    "TodayOrders": [
+        "ET53",
+        "ET57",
+        "ET58",
+        "ET59",
+        "ET60",
+        "ET61",
+        "ET62",
+        "ET63",
+        "ET64",
+        "ET65",
+        "ET66",
+        "ET67",
+        "ET68",
+        "ET69",
+        "ET70",
+        "ET71",
+        "ET72",
+        "ET73",
+        "ET74",
+        "ET75",
+        "ET76",
+        "ET77",
+        "ET78",
+        "ET79",
+        "ET80",
+        "ET81",
+        "ET82",
+        "ET83",
+        "ET84",
+        "ET85",
+        "ET86",
+        "ET87",
+        "ET88",
+        "ET89",
+        "ET90",
+        "ET91",
+        "ET92",
+        "ET93"
+    ],
+    "ExtraInformation": {
+        "QtyCalc": "DuringEntry"
+    },
+    "SignalEntry": {}
+}

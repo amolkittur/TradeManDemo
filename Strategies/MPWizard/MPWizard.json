@@ -1,0 +1,116 @@
+{
+    "StrategyName": "MPWizard",
+    "Description": "Strategy based on Market Profile Points ",
+    "Instruments": [
+        "NIFTY",
+        "BANKNIFTY",
+        "FINNIFTY"
+    ],
+    "NextTradeId": "MP11",
+    "GeneralParams": {
+        "TimeFrame": "1Min",
+        "ATRPeriod": 5,
+        "DataFetchStart": "09:15:00",
+        "DataFetchEnd": "15:30:00",
+        "ExpiryType": "Weekly",
+        "ProductType": "MIS",
+        "OrderType": "Market",
+        "Segment": "NFO",
+        "TradeView": "Bearish",
+        "TransactionType": "BUY",
+        "IndicesTokens": {
+            "NIFTY": 256265,
+            "BANKNIFTY": 260105,
+            "FINNIFTY": 257801
+        }
+    },
+    "EntryParams": {
+        "EntryTime": "10:15:00",
+        "NIFTY": {
+            "Name": "NIFTY",
+            "Token": 256265,
+            "ATR5D": 138.29,
+            "IBValue": 96.09999999999854,
+            "IBLevel": "Big",
+            "TriggerPoints": {
+                "IBHigh": 21019.8,
+                "IBLow": 20980.7
+            },
+            "PriceRef": 18,
+            "TSLStepSize": 0.5
+        },
+        "BANKNIFTY": {
+            "Name": "BANKNIFTY",
+            "Token": 260105,
+            "ATR5D": 603.42,
+            "IBValue": 311.5,
+            "IBLevel": "Medium",
+            "TriggerPoints": {
+                "IBHigh": 47498.1,
+                "IBLow": 47186.6
+            },
+            "PriceRef": 50,
+            "TSLStepSize": 0.5
+        },
+        "FINNIFTY": {
+            "Name": "FINNIFTY",
+            "Token": 257801,
+            "ATR5D": 235.51,
+            "IBValue": 128.14999999999782,
+            "IBLevel": "Medium",
+            "TriggerPoints": {
+                "IBHigh": 21290.6,
+                "IBLow": 21162.45
+            },
+            "PriceRef": 18,
+            "TSLStepSize": 0.5
+        }
+    },
+    "ExitParams": {
+        "SLType": "TrailingSL",
+        "SqroffTime": "15:05:00"
+    },
+    "TodayOrders": [
+        "MP200",
+        "MP200",
+        "MP3",
+        "MP4",
+        "MP5",
+        "MP6",
+        "MP7",
+        "MP8",
+        "MP9",
+        "MP10"
+    ],
+    "ExtraInformation": {
+        "QtyCalc": "PrcRef",
+        "NIFTYOptRef": [
+            18,
+            21,
+            24,
+            25,
+            15,
+            22,
+            22
+        ],
+        "BANKNIFTYOptRef": [
+            50,
+            65,
+            80,
+            90,
+            40,
+            55,
+            22
+        ],
+        "FINNIFTYOptRef": [
+            18,
+            21,
+            24,
+            25,
+            15,
+            22,
+            22
+        ]
+    },
+    "SignalEntry": {}
+}
