@@ -16,7 +16,6 @@ Babel==2.12.1
 beautifulsoup4==4.12.2
 CacheControl==0.13.1
 cachetools==5.3.1
-certifi @ file:///private/var/folders/k1/30mswbxs7r1g6zwn8y4fyt500000gp/T/abs_3bweqb8byn/croot/certifi_1690232244779/work/certifi
 cffi==1.15.1
 chardet==5.2.0
 charset-normalizer==3.1.0
