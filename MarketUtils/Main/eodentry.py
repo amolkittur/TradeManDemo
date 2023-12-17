@@ -202,7 +202,8 @@ def overnight_futures_details(orders, broker,strategy=None):
             morning_trade_orders.append(simplified_order)
         
 
-    if afternoon_trade_orders is not None:
+    if afternoon_trade_orders:
+        # Adjust the condition to properly check if the list is not empty
         # Check if any order has trade_type as 'SELL'
         is_any_sell_order = any(order.get('trade_type') == 'SELL' for order in afternoon_trade_orders)
 
@@ -211,7 +212,8 @@ def overnight_futures_details(orders, broker,strategy=None):
             order['direction'] = 'BEARISH' if is_any_sell_order else 'BULLISH'
 
 
-    if morning_trade_orders is not None:
+    if morning_trade_orders:
+        # Adjust the condition to properly check if the list is not empty
         # Check if any order has trade_type as 'BUY'
         is_any_buy_order = any(order.get('trade_type') == 'BUY' for order in morning_trade_orders)
 
@@ -307,7 +309,7 @@ strategy_to_function = {
     # Add other strategies and their functions here
 }
 
-# Placeholder function to segregate orders
+# Define a function to segregate orders based on strategy
 def segregate_by_strategy(details, strategies, broker):
     combined_details = {}
     for strategy in strategies:
