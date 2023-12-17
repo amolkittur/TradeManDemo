@@ -230,6 +230,7 @@ def overnight_futures_details(orders, broker,strategy=None):
             "Afternoon": afternoon_trade_orders
         }
     }
+    print(f"overnight_futures_details result: {results}")
     return results
 
 def expiry_trader_details(orders,broker,strategy=None):
@@ -327,6 +328,7 @@ def segregate_by_strategy(details, strategies, broker):
                     combined_details[strategy].append(detail)
                 else:
                     combined_details[strategy] = [detail]
+    print(f"segregate_by_strategy result: {combined_details}")
     return combined_details
 
 # 2. Process each user's strategies
