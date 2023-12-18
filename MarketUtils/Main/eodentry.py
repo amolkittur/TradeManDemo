@@ -273,32 +273,20 @@ def extra_details(orders,broker,strategy=None):
     }
 
     for order in orders:
-        simplified_order = simplify_zerodha_order(order) if broker == "zerodha" else simplify_aliceblue_order(order) if broker == "aliceblue" else order
+    # Simplify the order based on the broker
+    simplified_order = simplify_order_based_on_broker(order, broker)
 
-        if '_entry' in simplified_order['trade_id']:
-            if simplified_order['trade_type'] == 'BUY':
-                simplified_order['trade_type'] = 'LongOrder'
-            elif simplified_order['trade_type'] == 'SELL':
-                simplified_order['trade_type'] = 'ShortOrder'
-        elif '_exit' in simplified_order['trade_id']:
-            if simplified_order['trade_type'] == 'BUY':
-                simplified_order['trade_type'] = 'ShortCoverOrder'
-            elif simplified_order['trade_type'] == 'SELL':
-                simplified_order['trade_type'] = 'LongCoverOrder'
-            
-        if simplified_order['trade_type'] == 'LongOrder':
-            results[strategy]['Long'].append(simplified_order)
-        elif simplified_order['trade_type'] == 'ShortOrder':
-            results[strategy]['Short'].append(simplified_order)
-        elif simplified_order['trade_type'] == 'LongCoverOrder':
-            results[strategy]['LongCover'].append(simplified_order)
-        elif simplified_order['trade_type'] == 'ShortCoverOrder':
-            results[strategy]['ShortCover'].append(simplified_order)
-    
+    # Update the trade type based on the trade id and trade type
+    update_trade_type_based_on_trade_id_and_type(simplified_order)
+
+    # Append the simplified order to the appropriate list in the results dictionary
+    append_order_to_results(simplified_order, results, strategy)
+
     return results
 
         
 
+# Mapping of strategies to their corresponding functions
 strategy_to_function = {
     'AmiPy': amipy_details,
     'MPWizard': mpwizard_details,
@@ -306,31 +294,39 @@ strategy_to_function = {
     'ExpiryTrader' : expiry_trader_details,
     'Extra' : extra_details,
     'Stocks' : extra_details
-    # Add other strategies and their functions here
 }
 
 # Placeholder function to segregate orders
 def segregate_by_strategy(details, strategies, broker):
+    """
+    Segregate the orders based on the strategy.
+
+    Parameters:
+    details (list): List of order details.
+    strategies (list): List of strategies.
+    broker (str): Broker name.
+
+    Returns:
+    dict: A dictionary with strategies as keys and corresponding orders as values.
+    """
     combined_details = {}
     for strategy in strategies:
-        # 3. Get today_orders from the strategy's JSON and add _entry and _exit suffixes
+        # Get today_orders from the strategy's JSON and add _entry and _exit suffixes
         _, strategy_path = general_calc.get_strategy_json(strategy)
         strategy_obj = Strategy.read_strategy_json(strategy_path)
         trade_ids = strategy_obj.get_today_orders()
         entry_ids = [tid + "_entry" for tid in trade_ids]
         exit_ids = [tid + "_exit" for tid in trade_ids]
-        # 4. Search for the orders in the details list
+
+        # Search for the orders in the details list
         for detail in details:
             key_to_check = 'remarks' if broker == 'aliceblue' else 'tag' if broker == 'zerodha' else None
             if key_to_check and detail.get(key_to_check) in (entry_ids + exit_ids):
-                if strategy in combined_details:
-                    combined_details[strategy].append(detail)
-                else:
-                    combined_details[strategy] = [detail]
+                combined_details.setdefault(strategy, []).append(detail)
+
     return combined_details
 
 # 2. Process each user's strategies
-
 active_users_path = os.path.join(DIR, "MarketUtils","active_users.json")
 active_users = general_calc.read_json_file(active_users_path)
 
