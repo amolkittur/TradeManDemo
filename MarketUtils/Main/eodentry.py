@@ -48,15 +48,17 @@ def simplify_order_based_on_broker(order, broker):
         return simplify_aliceblue_order(order)
     else:
         raise ValueError(f"Unsupported broker: {broker}")
-        'trade_id' : trade_id,
-        'avg_price': float(detail['Avgprc']),
-        'qty': int(detail['Qty']),
-        'time': detail['OrderedTime'],
-        'strike_price': strike_price,
-        'option_type': option_type,
-        'trading_symbol': detail['Trsym'],
-        'trade_type': 'BUY' if detail['Trantype'] == 'B' else 'SELL',
-        'order_type' : order_type
+        return {
+            'trade_id' : trade_id,
+            'avg_price': float(detail['Avgprc']),
+            'qty': int(detail['Qty']),
+            'time': detail['OrderedTime'],
+            'strike_price': strike_price,
+            'option_type': option_type,
+            'trading_symbol': detail['Trsym'],
+            'trade_type': 'BUY' if detail['Trantype'] == 'B' else 'SELL',
+            'order_type' : order_type
+        }
     }
 
 users_with_strategies = []
