@@ -273,8 +273,8 @@ def extra_details(orders,broker,strategy=None):
     }
 
     for order in orders:
-    # Simplify the order based on the broker
-    simplified_order = simplify_order_based_on_broker(order, broker)
+        # Simplify the order based on the broker
+        simplified_order = simplify_order_based_on_broker(order, broker)
 
     # Update the trade type based on the trade id and trade type
     update_trade_type_based_on_trade_id_and_type(simplified_order)
