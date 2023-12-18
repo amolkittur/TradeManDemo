@@ -33,6 +33,12 @@ def simplify_zerodha_order(detail):
         'trade_id' : trade_id,  # This is the order_id for zerodha
         'avg_price': detail['average_price'],
         'qty': detail['quantity'],
+        'time': detail["order_timestamp"].strftime("%d/%m/%Y %H:%M:%S"),
+        'strike_price': strike_price,
+        'option_type': option_type,
+        'trading_symbol': trade_symbol,
+        'trade_type': detail['transaction_type'],
+        'order_type' : order_type
     }
 
 def simplify_order_based_on_broker(order, broker):
