@@ -71,6 +71,14 @@ def simplify_aliceblue_order(detail):
 users_with_strategies = []
 
 def assign_short_and_long_orders(orders):
+    """Assign orders to short and long signals.
+
+    Args:
+        orders (list): The list of orders to be analyzed.
+
+    Returns:
+        dict: Organized dictionary mapping strategies to their corresponding orders.
+    """
     results = {
         "AmiPy": {
             "ShortSignal": [],
@@ -153,7 +161,17 @@ def amipy_details(orders, broker,strategy=None):
 
     return results
 
-def mpwizard_details(orders, broker,strategy=None):
+def mpwizard_details(orders, broker, strategy=None):
+    """Get order details for MPWizard strategy.
+
+    Args:
+        orders (list): List of orders to process.
+        broker (str): Broker type to simplify orders for.
+        strategy (str): Strategy name for processing orders.
+
+    Returns:
+        dict: Organized buy and sell orders.
+    """
     results = {}
     buy_orders = []
     sell_orders = []
@@ -185,7 +203,17 @@ def mpwizard_details(orders, broker,strategy=None):
     }
     return results
 
-def overnight_futures_details(orders, broker,strategy=None):
+def overnight_futures_details(orders, broker, strategy=None):
+    """Organize orders for the Overnight Futures strategy.
+
+    Args:
+        orders (list): List of orders to process.
+        broker (str): Broker type to simplify orders for.
+        strategy (str): Strategy name for processing orders.
+
+    Returns:
+        dict: Separated morning and afternoon trade orders.
+    """
     results = {}
     morning_trade_orders = []
     afternoon_trade_orders = []
@@ -230,7 +258,17 @@ def overnight_futures_details(orders, broker,strategy=None):
     }
     return results
 
-def expiry_trader_details(orders,broker,strategy=None):
+def expiry_trader_details(orders, broker, strategy=None):
+    """Extract and organize orders for the Expiry Trader strategy.
+
+    Args:
+        orders (list): List of orders to process.
+        broker (str): Broker type.
+        strategy (str, optional): Strategy applied on the orders, if any.
+
+    Returns:
+        dict: Organized entry and exit orders.
+    """
     results = {}
     entry_orders = []
     exit_orders = []
@@ -262,7 +300,17 @@ def expiry_trader_details(orders,broker,strategy=None):
     }
     return results
 
-def extra_details(orders,broker,strategy=None):
+def extra_details(orders, broker, strategy=None):
+    """Process additional details for custom strategies.
+
+    Args:
+        orders (list): List of orders to process.
+        broker (str): Broker type.
+        strategy (str, optional): Strategy applied on the orders, if any.
+
+    Returns:
+        dict: Orders categorized by Long, Short, LongCover, and ShortCover.
+    """
     results = {
         strategy: {
             "Long": [],
