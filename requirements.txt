@@ -158,3 +158,4 @@ wsproto==1.2.0
 yarl==1.9.2
 yfinance==0.2.32
 zope.interface==6.0
+flake8
