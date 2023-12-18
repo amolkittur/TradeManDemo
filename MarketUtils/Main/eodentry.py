@@ -33,30 +33,15 @@ def simplify_zerodha_order(detail):
         'trade_id' : trade_id,  # This is the order_id for zerodha
         'avg_price': detail['average_price'],
         'qty': detail['quantity'],
-        'time': detail["order_timestamp"].strftime("%d/%m/%Y %H:%M:%S"),
-        'strike_price': strike_price,
-        'option_type': option_type,
-        'trading_symbol': trade_symbol,
-        'trade_type': detail['transaction_type'],
-        'order_type' : order_type
     }
 
-def simplify_aliceblue_order(detail):
-    if detail['optionType'] == 'XX':
-        strike_price = 0
-        option_type = "FUT"
+def simplify_order_based_on_broker(order, broker):
+    if broker == "zerodha":
+        return simplify_zerodha_order(order)
+    elif broker == "aliceblue":
+        return simplify_aliceblue_order(order)
     else:
-        strike_price = int(detail['strikePrice'])
-        option_type = detail['optionType']
-
-    trade_id = detail['remarks']
-
-    if trade_id.endswith('_entry'):
-        order_type = "entry"
-    elif trade_id.endswith('_exit'):
-        order_type = "exit"
-
-    return {
+        raise ValueError(f"Unsupported broker: {broker}")
         'trade_id' : trade_id,
         'avg_price': float(detail['Avgprc']),
         'qty': int(detail['Qty']),
