@@ -67,6 +67,7 @@ def simplify_aliceblue_order(detail):
         'trade_type': 'BUY' if detail['Trantype'] == 'B' else 'SELL',
         'order_type' : order_type
     }
+}
 
 users_with_strategies = []
 
